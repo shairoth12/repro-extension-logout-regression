@@ -1,0 +1,1 @@
+# repro-extension-logout-regression
