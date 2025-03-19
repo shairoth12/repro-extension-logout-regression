@@ -1,0 +1,4 @@
+user-data/**
+.vscode/**
+**/__pycache__/**
+.venv
