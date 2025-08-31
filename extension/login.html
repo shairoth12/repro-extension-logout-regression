@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .logged-in {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .logged-out {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Extension Authentication</h2>
+    <div id="loginForm" class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" value="testuser">
+      <label for="password">Password:</label>
+      <input type="password" id="password" value="password123">
+      <br><br>
+      <button id="loginButton">Login</button>
+    </div>
+    
+    <div id="logoutForm" style="display:none;" class="form-group">
+      <p>You are logged in as <span id="userDisplay"></span></p>
+      <button id="logoutButton">Logout</button>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+  
+  <script src="login.js"></script>
+</body>
+</html>
